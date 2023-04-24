@@ -1,0 +1,8 @@
+/* pages/login/login.wxss */
+.right_arrow{
+  margin-top: 2vw;
+  margin-left: 4vw;
+  width: 12vw;
+  height: 16vw;
+  transform: rotate(180deg);
+}

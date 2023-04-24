@@ -1,0 +1,16 @@
+/* pages/salesinfo/salesinfo.wxss */
+.main{
+  height: 84vh;
+  top: 16vh;
+}
+
+.charts-box{
+  width: 100vw;
+  height:50vw;
+}
+
+.charts {
+  width: 100vw;
+  height: 67vw;
+  margin-top: 2vh;
+}

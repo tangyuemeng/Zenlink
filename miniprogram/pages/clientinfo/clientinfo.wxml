@@ -1,0 +1,6 @@
+<view class="navi-bar box-white box-untap" bindtap="naviback"> 
+  <view class="arrow left"></view>
+  <view class="font-subtitle color-black font-bold" style="margin-left: 1vw;  margin-top: 7.4vh;">客户管理</view>
+</view>
+
+<view class="font-subtitle align-top align-left-lg" style="margin-top: 20vh;">该功能未开放</view>

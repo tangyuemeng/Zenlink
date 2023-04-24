@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="box-untap box-white box-w80" style="left: 10vw;height: 34vh;top: 22vh;">
+  <view class="font-subtitle color-black color-transparent align-left align-top font-bold">工号</view>
+  <input class="font-subtitle align-left" style="margin-top: 1.5vh;" bindinput="bindKeyInput" data-key="id" auto-focus placeholder="例：ZL123456"/>
+  <view style="width: 70vw;height: 0px;border: 1px solid rgba(43, 43, 43, 0.3);transform: rotate(-0.21deg);margin-top: 1vh;margin-left: 5vw;"></view>
+
+  <view class="font-subtitle color-black color-transparent align-left align-top font-bold" style="margin-top: 4vh ">密码</view>
+  <input class="font-subtitle" style="margin-top: 1.5vh;margin-left: 5vw;" bindinput="bindKeyInput" data-key="password" password auto-focus placeholder="*****"/>
+  <view style="width: 70vw;height: 0px;border: 1px solid rgba(43, 43, 43, 0.3);transform: rotate(-0.21deg);margin-top: 1vh;margin-left: 5vw;"></view>
+
+  <view class="box-normal box-blue" style="right: 4vw;height: 20vw;width: 20vw; bottom: -3vh;" bindtap="login">
+    <image class="right_arrow" src="../../images/arrow.svg"></image>
+  </view>
+
+  <view class="font-comment font-bold" style="margin-top: 12vh;margin-left: 2vw;">忘记密码？请联系管理员</view>
+</view>
+ 

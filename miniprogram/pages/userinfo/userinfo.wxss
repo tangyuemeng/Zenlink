@@ -1,0 +1,10 @@
+/* pages/userinfo/userinfo.wxss */
+.main{
+  height: 78vh;
+  top: 22vh;
+}
+
+.user-image{
+  margin-left: 8vw;
+  margin-top: -4vh;
+}
