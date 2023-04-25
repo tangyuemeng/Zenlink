@@ -1,1 +1,5 @@
 /* pages/clientinfo/clientinfo.wxss */
+.main{
+  top: 15vh;
+  height: 85vh;
+}

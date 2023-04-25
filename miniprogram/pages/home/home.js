@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+     home : "black",
+     setting : "darkblue"
   },
 
   /**
@@ -13,6 +14,21 @@ Page({
    */
   onLoad(options) {
 
+  },
+
+  selectPage(e){
+    if (e.currentTarget.dataset.page == "home"){
+      this.setData({
+        home:"black",
+        setting : "darkblue"
+      })
+    }
+    else{
+      this.setData({
+        home:"darkblue",
+        setting : "black"
+      })
+    }
   },
 
   navigatePage(e){

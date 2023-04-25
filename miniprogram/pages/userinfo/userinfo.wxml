@@ -6,21 +6,21 @@
 <view class="main box-untap box-white" style="width: 100vw;">
   <image class="user-image img-80 round" src="https://cdn0.mynvwm.com/wp-content/uploads/2015/10/af9940076812w1.jpg"></image> 
 
-  <view class="font-bold font-title color-black align-top-sm align-left-lg ">陈乃香</view>
-  <view class="font-bold font-main color-black align-left-lg color-transparent">ZL1251234</view>
+  <view class="font-bold font-title color-black align-top-sm align-left-lg ">{{name}}</view>
+  <view class="font-bold font-main color-black align-left-lg color-transparent">{{userID}}</view>
 
 
   <view class="font-bold font-main color-black align-left-lg align-top color-transparent">性别</view>
-  <view class="font-bold font-subtitle color-black align-left-lg ">男</view>
+  <view class="font-bold font-subtitle color-black align-left-lg ">{{sex}}</view>
 
   <view class="font-bold font-main color-black align-left-lg align-top color-transparent">所属</view>
-  <view class="font-bold font-subtitle color-black align-left-lg">营业部</view>
+  <view class="font-bold font-subtitle color-black align-left-lg">{{position}}</view>
 
   <view class="font-bold font-main color-black align-left-lg align-top color-transparent">通勤区间</view>
-  <view class="font-bold font-subtitle color-black align-left-lg ">池袋-大久保</view>
+  <view class="font-bold font-subtitle color-black align-left-lg ">{{route}}</view>
 
   <view class="font-bold font-main color-black align-left-lg align-top color-transparent">入社日期</view>
-  <view class="font-bold font-subtitle color-black align-left-lg">2023.4.1</view>
+  <view class="font-bold font-subtitle color-black align-left-lg">{{date}}</view>
 
   <view class="btn-normal font-bold font-subtitle" style="margin-top: 30px; margin-left: 32vw;">修改</view>
 </view>

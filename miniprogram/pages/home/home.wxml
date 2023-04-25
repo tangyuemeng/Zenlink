@@ -63,6 +63,6 @@
 </view>
 
 <view class="box-white box-untap" style="width: 100vw; height: 10vh;bottom:0vh; border-radius: 20px;display: flex;justify-content: center;">
-  <view class="font-title color-darkblue font-bold" style="padding: 0 35vw 0 0px;margin-top: 1.5vh;">首页</view>
-  <view class="font-title color-darkblue font-bold" style="margin-top: 1.5vh;">我的</view>
+  <view class="font-subtitle color-{{home}} font-bold" style="padding: 0 35vw 0 0px;margin-top: 1.5vh;" bindtap="selectPage" data-page="home">首页</view>
+  <view class="font-subtitle color-{{setting}} font-bold" style="margin-top: 1.5vh;" bindtap="selectPage" data-page="setting">我的</view>
 </view>

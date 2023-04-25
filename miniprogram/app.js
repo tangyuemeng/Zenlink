@@ -1,17 +1,15 @@
 // app.js
+
+
 App({
   globalData:{    
-    isVIP : true,
-    userID:null,
-    num:0,
-    allowedNum:0,
-    cardtype:null,
-    classtype:null,
-    name:null,
-    islogin:false,
-    isTrail:false,
-    pianonum:0,
-    showmodel:false,
+    userID:'',
+    password:'',
+    sex:'',
+    name:'',
+    route:'',
+    date:Date(),
+    position:''
   }, 
   onLaunch: function () {
     if (!wx.cloud) {

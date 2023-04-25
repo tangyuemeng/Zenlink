@@ -3,4 +3,73 @@
   <view class="font-subtitle color-black font-bold" style="margin-left: 1vw;  margin-top: 7.4vh;">客户管理</view>
 </view>
 
-<view class="font-subtitle align-top align-left-lg" style="margin-top: 20vh;">该功能未开放</view>
+
+<scroll-view scroll-y="true" class="main box-untap box-white" style="width: 100vw;">
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">物件名称
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:西新宿uvas"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">房间号
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:101"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">申请日期
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:2023-1-1"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">申请平台
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">入住日期
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:2023-1-1"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">客人退房日期
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:2023-1-1"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">客人来源
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">客人管理
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">紧急联系人
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:张三"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">搬家理由
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:通学"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">中介费
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:10,000"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">AD
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例:10,000"/>
+
+  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">审批人
+  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
+  </view>
+  <input class="font-bold font-comment color-black align-left-sm color-transparent" style="padding-bottom: 6vh;" maxlength="40" bindinput="bindKeyInput" placeholder="例:西新宿uvas"/>
+
+  <view class="btn-normal font-bold font-main" style="margin-top: 30px; margin-left: 32vw;margin-bottom: 100px;">提交</view>
+  <view style="width: 100vw;height: 6vh;"></view>
+</scroll-view>
