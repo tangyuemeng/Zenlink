@@ -1,8 +1,8 @@
 <view class="box-w90 box-white box-untap align-left" style="height: 14vh;top:12vh;">
   <view class="font-main color-black align-left align-top color-transparent font-bold">本月完成度</view>
-  <view class="font-large-title color-black align-left font-bold">26.7w</view>
+  <view class="font-large-title color-black align-left font-bold">{{allSale}}w</view>
   <view class="box-w80 box-black box-untap align-left" style="height: 2vh;margin-top: 0vh;"></view>
-  <view class="box-blue box-untap align-left" style="width: 56vw; height: 2vh;margin-top: 0vh;"></view>
+  <view class="box-blue box-untap align-left" style="width:{{countwidth}}vw; height: 2vh;margin-top: 0vh;"></view>
 </view>
 
 <view class="box-w40 box-white box-normal align-left" style="height: 10vh;top:28vh;display: flex;" bindtap="navigatePage" data-page="oaauth">
@@ -15,7 +15,7 @@
 <view class="box-w40 box-white box-normal" style="height: 10vh;top:28vh; right: 5vw;display: flex;" bindtap="navigatePage" data-page="userinfo">
   <image class="img-50 align-top align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/Corporate Tech Computer Logo (2).png"></image>
   <view class="font-subtitle color-black font-bold" style="margin-left: 2vw;margin-top: 2.3vh;">个人中心
-    <view class="font-comment color-black font-bold color-transparent">修改个人信息</view>
+    <view class="font-comment color-black font-bold color-transparent">查看个人信息</view>
   </view>
 </view>
 

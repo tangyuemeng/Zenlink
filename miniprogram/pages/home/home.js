@@ -1,4 +1,7 @@
 // pages/home/home.js
+const db = wx.cloud.database()
+const app = getApp()
+const _ = db.command
 Page({
 
   /**
@@ -12,8 +15,13 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-
+  onLoad() {
+    let allSale = app.globalData.count +  app.globalData.uncount 
+    let countwidth = allSale > 40 ? 80 : allSale/40*80
+    this.setData({
+      allSale : allSale,
+      countwidth: countwidth
+    })
   },
 
   selectPage(e){

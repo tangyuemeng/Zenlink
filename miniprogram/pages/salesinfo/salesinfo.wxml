@@ -8,13 +8,13 @@
 
 <view>
 <view class="font-subtitle color-black font-bold align-left align-top" style="display: flex;">当月总览
-  <view class="font-subtitle color-black font-bold align-left-xxl">35.7w</view>
+  <view class="font-subtitle color-black font-bold align-left-xxl">{{count}}w</view>
 </view>
 <view class="font-main color-black font-bold align-left align-top-sm" style="display: flex;">已入账
-  <view class="font-main color-black font-bold align-left-xl">25.7w</view>
+  <view class="font-main color-black font-bold align-left-xl">{{count}}w</view>
 </view>
 <view class="font-main color-black font-bold align-left" style="display: flex;">未入账
-  <view class="font-main color-black font-bold align-left-xl">10.0w</view>
+  <view class="font-main color-black font-bold align-left-xl">{{uncount}}w</view>
 </view>
 <view class="under-border"></view>
 </view>
@@ -22,11 +22,11 @@
 
 <view>
   <view class="font-subtitle color-black font-bold align-left align-top" style="display: flex;">当月KPI
-    <view class="font-subtitle color-black font-bold align-left-xl">83%</view>
+    <view class="font-subtitle color-black font-bold align-left-xl">{{percent}}%</view>
   </view>
     <view class="align-top" style="height: 3vh;">
       <view class="box-w80 box-black box-untap align-left-lg" style="height: 2vh;"></view>
-      <view class="box-blue box-untap align-left-lg" style="width: 56vw; height: 2vh; "></view>
+      <view class="box-blue box-untap align-left-lg" style="width: {{countwidth}}vw; height: 2vh; "></view>
     </view>
       <view class="under-border"></view>
 </view>

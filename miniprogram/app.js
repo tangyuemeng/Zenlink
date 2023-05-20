@@ -9,7 +9,9 @@ App({
     name:'',
     route:'',
     date:Date(),
-    position:''
+    position:'',
+    count:0,
+    uncount:0,
   }, 
   onLaunch: function () {
     if (!wx.cloud) {

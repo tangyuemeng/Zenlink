@@ -41,7 +41,8 @@ Page({
           app.globalData.route = res[0].route
           app.globalData.date = res[0].date
           app.globalData.position = res[0].position
-          console.log(app.globalData.date)
+          app.globalData.uncount = res[0].uncount
+          app.globalData.count = res[0].count
           wx.showToast({
             icon: 'success',
             title: '登陆成功',

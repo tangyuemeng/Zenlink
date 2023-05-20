@@ -22,5 +22,5 @@
   <view class="font-bold font-main color-black align-left-lg align-top color-transparent">入社日期</view>
   <view class="font-bold font-subtitle color-black align-left-lg">{{date}}</view>
 
-  <view class="btn-normal font-bold font-subtitle" style="margin-top: 30px; margin-left: 32vw;">修改</view>
+  <!-- <view class="btn-normal font-bold font-subtitle" style="margin-top: 30px; margin-left: 32vw;">修改</view> -->
 </view>

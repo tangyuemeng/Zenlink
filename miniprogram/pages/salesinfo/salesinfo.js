@@ -1,5 +1,8 @@
 
 import uCharts from '../../components/qiun-wx-ucharts/u-charts.js';
+const db = wx.cloud.database()
+const app = getApp()
+const _ = db.command
 var uChartsInstance = {};
 Page({
   data: {
@@ -31,6 +34,16 @@ Page({
         this.drawCharts('AtiNjidjBEpKNViiLbQmVUlsSWihuAvN', this.data.res,ctx);
     })
     .exec()
+    let allSale = app.globalData.count +  app.globalData.uncount 
+    let percent = allSale > 40 ? 100 : allSale/40 * 100
+    let countwidth = allSale > 40 ? 80 : allSale/40*80
+    this.setData({
+      count : app.globalData.count,
+      uncount : app.globalData.uncount,
+      allSale : allSale,
+      countwidth: countwidth,
+      percent: percent
+    })
   },
   onReady() {
   
