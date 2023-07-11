@@ -26,6 +26,7 @@ Page({
         userID:this.userID
       }).get()
       let res = result.data
+      console.log(res)
       if (res.length == 0) {
         wx.showToast({
           icon: 'error',
@@ -41,8 +42,6 @@ Page({
           app.globalData.route = res[0].route
           app.globalData.date = res[0].date
           app.globalData.position = res[0].position
-          app.globalData.uncount = res[0].uncount
-          app.globalData.count = res[0].count
           wx.showToast({
             icon: 'success',
             title: '登陆成功',

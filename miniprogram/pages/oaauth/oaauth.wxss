@@ -1,5 +1,38 @@
 /* pages/oaauth/oaauth.wxss */
+.main-tap{
+  position: absolute;
+  top: 20vh;
+  left: 2vw;
+  width: 96vw;
+  height: 70vh;
+}
+
 .main{
-  top: 15vh;
-  height: 85vh;
+  position: relative;
+  display: flex;
+  width: 96vw;
+  height: 7vh;
+  margin-bottom: 1vh;
+}
+
+.status-symbol{
+  display: flex;
+  position: absolute;
+  top:15vh;
+}
+
+.c-red{
+  color: red;
+}
+
+.c-yellow{
+  color: yellow;
+}
+
+.c-blue{
+  color: blue;
+}
+
+.c-green{
+  color: green;
 }

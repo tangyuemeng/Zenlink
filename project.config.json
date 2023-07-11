@@ -45,7 +45,7 @@
     "minifyWXML": true,
     "condition": false
   },
-  "appid": "wx17f65d804a4fbb8b",
+  "appid": "wx3ac91f633d61b00c",
   "projectname": "zenlink",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",

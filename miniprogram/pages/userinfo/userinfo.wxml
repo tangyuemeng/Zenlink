@@ -4,7 +4,7 @@
 </view>
 
 <view class="main box-untap box-white" style="width: 100vw;">
-  <image class="user-image img-80 round" src="https://cdn0.mynvwm.com/wp-content/uploads/2015/10/af9940076812w1.jpg"></image> 
+  <image class="user-image img-80 round" src="https://cdn.pixabay.com/photo/2021/07/02/04/48/user-6380868_1280.png"></image> 
 
   <view class="font-bold font-title color-black align-top-sm align-left-lg ">{{name}}</view>
   <view class="font-bold font-main color-black align-left-lg color-transparent">{{userID}}</view>

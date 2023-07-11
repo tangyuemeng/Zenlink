@@ -10,15 +10,15 @@ App({
     route:'',
     date:Date(),
     position:'',
-    count:0,
-    uncount:0,
+    mysale:[],
+    allsale:[]
   }, 
   onLaunch: function () {
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力');
     } else {
       wx.cloud.init({
-        env: 'cloud1-7g6ho2ny7014f0ea',
+        env: 'zenlink-2g43zf3r5f2eb1e8',
       });
     }
     this.globalData = {};

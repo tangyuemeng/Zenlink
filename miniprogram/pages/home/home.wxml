@@ -1,33 +1,33 @@
 <view class="box-w90 box-white box-untap align-left" style="height: 14vh;top:12vh;">
   <view class="font-main color-black align-left align-top color-transparent font-bold">本月完成度</view>
-  <view class="font-large-title color-black align-left font-bold">{{allSale}}w</view>
+  <view class="font-large-title color-black align-left font-bold">{{allSale}}¥</view>
   <view class="box-w80 box-black box-untap align-left" style="height: 2vh;margin-top: 0vh;"></view>
   <view class="box-blue box-untap align-left" style="width:{{countwidth}}vw; height: 2vh;margin-top: 0vh;"></view>
 </view>
 
 <view class="box-w40 box-white box-normal align-left" style="height: 10vh;top:28vh;display: flex;" bindtap="navigatePage" data-page="oaauth">
-  <image class="img-50 align-top align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/Corporate Tech Computer Logo (4).png"></image>
-  <view class="font-subtitle color-black font-bold" style="margin-left: 2vw;margin-top: 2.3vh;">OA审批
-    <view class="font-comment color-black font-bold color-transparent">租房订单申请</view>
+  <image class="img-50 align-top align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/5.png"></image>
+  <view class="font-subtitle color-black font-bold" style="margin-left: 2vw;margin-top: 2.3vh;">营业实绩
+    <view class="font-comment color-black font-bold color-transparent">营业实绩查询</view>
   </view>
 </view>
 
 <view class="box-w40 box-white box-normal" style="height: 10vh;top:28vh; right: 5vw;display: flex;" bindtap="navigatePage" data-page="userinfo">
-  <image class="img-50 align-top align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/Corporate Tech Computer Logo (2).png"></image>
+  <image class="img-50 align-top align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/4.png"></image>
   <view class="font-subtitle color-black font-bold" style="margin-left: 2vw;margin-top: 2.3vh;">个人中心
     <view class="font-comment color-black font-bold color-transparent">查看个人信息</view>
   </view>
 </view>
 
 <view class="box-w40 box-white box-normal align-left" style="height: 10vh;top:40vh;display: flex;" bindtap="navigatePage" data-page="salesinfo">
-  <image class="img-50 align-top align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/Corporate Tech Computer Logo (1).png"></image>
+  <image class="img-50 align-top align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/3.png"></image>
   <view class="font-subtitle color-black font-bold" style="margin-left: 2vw;margin-top: 2.3vh;">业绩查询
     <view class="font-comment color-black font-bold color-transparent">营业额查询</view>
   </view>
 </view>
 
 <view class="box-w40 box-white box-normal align-left" style="height: 10vh;top:40vh; right: 5vw;display: flex;" bindtap="navigatePage" data-page="clientinfo">
-  <image class="img-50 align-top align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/Corporate Tech Computer Logo (7).png"></image>
+  <image class="img-50 align-top align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/9.png"></image>
   <view class="font-subtitle color-black font-bold" style="margin-left: 2vw;margin-top: 2.3vh;">客户管理
     <view class="font-comment color-black font-bold color-transparent">添加客户信息</view>
   </view>
@@ -36,17 +36,17 @@
 <view class="box-w90 box-white box-untap align-left" style="height: 30vh;top:56vh; right: 5vw;">
   <view class="font-title color-black font-bold"  style="margin-top:-4vh;margin-left: 1vw;">排行榜</view>
   <view class="" style="width: 90vw; height: 5.6vh;position: relative;margin-top: 0.4vh;display: flex;align-items: center;">
-    <image class="img-40 align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/6.png" style="padding: 0 16vw 0 0px;"></image>
+    <image class="img-40 align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/6.png" style="padding: 0 16vw 0 0px;"></image>
     <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">陈乃祥</view>
     <view class="font-title color-black font-bold">26.7w</view>
   </view>
   <view class="" style="width: 90vw; height: 5.6vh;position: relative;margin-top: 0.4vh;display: flex;align-items: center;">
-    <image class="img-40 align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/7.png" style="padding: 0 16vw 0 0px;"></image>
+    <image class="img-40 align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/7.png" style="padding: 0 16vw 0 0px;"></image>
     <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">李香</view>
     <view class="font-title color-black font-bold">24.7w</view>
   </view>
   <view class="" style="width: 90vw; height: 5.6vh;position: relative;margin-top: 0.4vh;display: flex;align-items: center;">
-    <image class="img-40 align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/8.png" style="padding: 0 16vw 0 0px;"></image>
+    <image class="img-40 align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/8.png" style="padding: 0 16vw 0 0px;"></image>
     <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">金珍妮</view>
     <view class="font-title color-black font-bold">20.3w</view>
   </view>
@@ -63,6 +63,6 @@
 </view>
 
 <view class="box-white box-untap" style="width: 100vw; height: 10vh;bottom:0vh; border-radius: 20px;display: flex;justify-content: center;">
-  <view class="font-subtitle color-{{home}} font-bold" style="padding: 0 35vw 0 0px;margin-top: 1.5vh;" bindtap="selectPage" data-page="home">首页</view>
-  <view class="font-subtitle color-{{setting}} font-bold" style="margin-top: 1.5vh;" bindtap="selectPage" data-page="setting">我的</view>
+  <view class="font-title font-bold" style="padding: 0 0vw 0 0px;margin-top: 1.5vh;">Zenlink</view>
+
 </view>

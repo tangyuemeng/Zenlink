@@ -1,78 +1,28 @@
 <view class="navi-bar box-white box-untap" bindtap="naviback"> 
   <view class="arrow left"></view>
-  <view class="font-subtitle color-black font-bold" style="margin-left: 1vw;  margin-top: 7.4vh;">OA审批</view>
+  <view class="font-subtitle color-black font-bold" style="margin-left: 1vw;  margin-top: 7.4vh;">营业实绩</view>
 </view>
 
-<scroll-view scroll-y="true" class="main box-untap box-white" style="width: 100vw;">
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">物件名称
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="orderName" placeholder="例:西新宿uvas"/>
+<view class="status-symbol align-left-lg">
+<view class="font-main font-bold align-right c-red">•审核中</view>
+<view class="font-main font-bold align-right c-yellow">•待签约</view>
+<view class="font-main font-bold align-right c-blue">•待入账</view>
+<view class="font-main font-bold align-right c-green">•已入账</view>
+</view>
 
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">房间号
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="orderId" placeholder="例:101"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">申请日期
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="orderTime" placeholder="例:2023-1-1"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">申请平台
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="orderPlatform" placeholder="例:"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">入住日期
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="orderIntime" placeholder="例:2023-1-1"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">客人退房日期
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="clientTime" placeholder="例:2023-1-1"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">客人来源
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="clientFrom" placeholder="例"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">客人管理
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="bindKeyInput" placeholder="例"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">紧急联系人
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="clientFriend" placeholder="例:张三"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">搬家理由
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="clientFeason" placeholder="例:通学"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">中介费
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="fee" placeholder="例:10,000"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">AD
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <input class="font-bold font-comment color-black align-left-sm color-transparent"  maxlength="40" bindinput="AD" placeholder="例:10,000"/>
-
-  <view class="font-bold font-main color-black align-top align-left-sm " style="display: flex;">审批人
-  <view style="color: red;font-size: 16px;margin-left: 2px;">*</view>
-  </view>
-  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="font-bold font-comment color-black align-left-sm color-transparent">
-      审批人:{{array[index]}}
+<view class="main-tap">
+  <view class="box-white box-untap main" wx:for="{{array}}"> 
+    <view class="font-main color-black align-left-sm align-top font-bold">{{item.homeName}}</view>
+    <view class="font-comment color-black align-left-sm align-top font-bold" style="display: inline;">
+      <view>中介费:{{item.fee}}</view>
+      <view>AD:{{item.AD}}</view>
     </view>
-  </picker>
 
-  <view class="btn-normal font-bold font-main" style="margin-top: 30px; margin-left: 32vw;margin-bottom: 100px;" bindtap="upload">提交</view>
-  <view style="width: 100vw;height: 6vh;"></view>
-</scroll-view>
+
+    <!-- 状态栏 -->
+    <view class="font-main font-bold align-right align-left-sm align-top  c-red" wx:if="{{item.status == 'review'}}">•审核中</view>
+    <view class="font-main font-bold align-right align-left-sm align-top  c-yellow" wx:if="{{item.status == 'approved'}}">•待签约</view>
+    <view class="font-main font-bold align-right align-left-sm align-top  c-blue" wx:if="{{item.status == 'signatured'}}">•待入账</view>
+    <view class="font-main font-bold align-right align-left-sm align-top  c-green" wx:if="{{item.status == 'finished'}}">•已入账</view>
+  </view>
+</view>

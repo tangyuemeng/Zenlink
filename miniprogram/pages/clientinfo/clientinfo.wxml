@@ -4,14 +4,14 @@
 </view>
 
 <view class="box-w40 box-white box-normal align-left" style="height: 10vh;top:20vh; display: flex;" bindtap="navigatePage" data-page="clientinfo">
-  <image class="img-50 align-top align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/Corporate Tech Computer Logo (7).png"></image>
+  <image class="img-50 align-top align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/9.png"></image>
   <view class="font-subtitle color-black font-bold" style="margin-left: 2vw;margin-top: 2.3vh;">添加客户
     <view class="font-comment color-black font-bold color-transparent">添加客户信息</view>
   </view>
 </view>
 
 <view class="box-w40 box-white box-normal align-left" style="height: 10vh;top:20vh; right: 5vw;display: flex;" bindtap="navigatePage" data-page="clientinfo">
-  <image class="img-50 align-top align-left-sm" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/Corporate Tech Computer Logo (7).png"></image>
+  <image class="img-50 align-top align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/9.png"></image>
   <view class="font-subtitle color-black font-bold" style="margin-left: 2vw;margin-top: 2.3vh;">客户管理
     <view class="font-comment color-black font-bold color-transparent">管理客户信息</view>
   </view>
