@@ -10,6 +10,7 @@ App({
     route:'',
     date:Date(),
     position:'',
+    mytotalsale:'',
     mysale:[],
     allsale:[]
   }, 

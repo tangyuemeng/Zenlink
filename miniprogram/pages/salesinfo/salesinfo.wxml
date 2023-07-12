@@ -4,7 +4,13 @@
 </view>
 
 <scroll-view scroll-y="true" class="main box-untap box-white" style="width: 100vw;">
-<view class="font-subtitle color-black font-bold align-left align-top border-round" style="width: 69px;">4月▾</view>
+<view class="font-subtitle color-black font-bold align-left align-top border-round" style="width: 69px;">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker align-left-sm">
+        {{array[index]}}
+      </view>
+    </picker>
+</view>
 
 <view>
 <view class="font-subtitle color-black font-bold align-left align-top" style="display: flex;">当月总览
@@ -35,7 +41,9 @@
 
 <view class="charts-box">
   <view class="font-subtitle color-black font-bold align-left align-top" style="display: flex;">近半年业绩</view>
-  <canvas id="AtiNjidjBEpKNViiLbQmVUlsSWihuAvN" type="2d" class="charts" bindtouchend="tap"/>
+  <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+    <canvas id="AtiNjidjBEpKNViiLbQmVUlsSWihuAvN" type="2d" class="charts" bindtouchend="tap"/>
+  </scroll-view>
 </view>
 
 </scroll-view>

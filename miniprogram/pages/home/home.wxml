@@ -37,28 +37,28 @@
   <view class="font-title color-black font-bold"  style="margin-top:-4vh;margin-left: 1vw;">排行榜</view>
   <view class="" style="width: 90vw; height: 5.6vh;position: relative;margin-top: 0.4vh;display: flex;align-items: center;">
     <image class="img-40 align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/6.png" style="padding: 0 16vw 0 0px;"></image>
-    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">陈乃祥</view>
-    <view class="font-title color-black font-bold">26.7w</view>
+    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">{{allsalesorted[0].userID}}</view>
+    <view class="font-main color-black font-bold">{{allsalesorted[0].count}}¥</view>
   </view>
   <view class="" style="width: 90vw; height: 5.6vh;position: relative;margin-top: 0.4vh;display: flex;align-items: center;">
     <image class="img-40 align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/7.png" style="padding: 0 16vw 0 0px;"></image>
-    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">李香</view>
-    <view class="font-title color-black font-bold">24.7w</view>
+    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">{{allsalesorted[1].userID}}</view>
+    <view class="font-main color-black font-bold">{{allsalesorted[1].count}}¥</view>
   </view>
   <view class="" style="width: 90vw; height: 5.6vh;position: relative;margin-top: 0.4vh;display: flex;align-items: center;">
     <image class="img-40 align-left-sm" src="cloud://zenlink-2g43zf3r5f2eb1e8.7a65-zenlink-2g43zf3r5f2eb1e8-1319111687/8.png" style="padding: 0 16vw 0 0px;"></image>
-    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">金珍妮</view>
-    <view class="font-title color-black font-bold">20.3w</view>
+    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">{{allsalesorted[2].userID}}</view>
+    <view class="font-main color-black font-bold">{{allsalesorted[2].count}}¥</view>
   </view>
   <view class="" style="width: 90vw; height: 5.6vh;position: relative;margin-top: 0.4vh;display: flex;align-items: center;">
     <view class="img-40 align-left-sm font-title color-black align-left font-bold" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/8.png" style="padding: 0 13vw 0 3vw;">4</view>
-    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">张元英</view>
-    <view class="font-title color-black font-bold">16.7w</view>
+    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">{{allsalesorted[3].userID}}</view>
+    <view class="font-main color-black font-bold">{{allsalesorted[3].count}}¥</view>
   </view>
   <view class="" style="width: 90vw; height: 5.6vh;position: relative;margin-top: 0.4vh;display: flex;align-items: center;">
     <view class="img-40 align-left-sm font-title color-black align-left font-bold" src="cloud://cloud1-7g6ho2ny7014f0ea.636c-cloud1-7g6ho2ny7014f0ea-1317830454/8.png" style="padding: 0 13vw 0 3vw;">5</view>
-    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">金智秀</view>
-    <view class="font-title color-black font-bold">12.7w</view>
+    <view class="font-main color-black font-bold align-left"style="padding: 0 20vw 0 0px;width:15vw">{{allsalesorted[4].userID}}</view>
+    <view class="font-main color-black font-bold">{{allsalesorted[4].count}}¥</view>
   </view>
 </view>
 

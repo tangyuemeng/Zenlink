@@ -32,12 +32,17 @@ Page({
     }).get()
     let res2 = result2.data
     app.globalData.mysale = this.statusCheck(res2)
-    let mysale = this.calculateMonthCount(app.globalData.mysale,this.data.currentmonth)
-    let allSale = mysale.toLocaleString()
-    let countwidth = mysale > 2000000 ? 80 : mysale/2000000*80
+    app.globalData.mytotalsale = this.calculateTotalCount(app.globalData.mysale,this.data.currentmonth)
+
+    let allSale = app.globalData.mytotalsale.toLocaleString()
+    let countwidth = app.globalData.mytotalsale > 2000000 ? 80 : app.globalData.mytotalsale/2000000*80
+
+    let allsalesorted = this.sortSale(app.globalData.allsale)
+    console.log(allsalesorted)
     this.setData({
       allSale : allSale,
-      countwidth: countwidth
+      countwidth: countwidth,
+      allsalesorted:allsalesorted
     })
     wx.hideLoading()
   },
@@ -48,23 +53,65 @@ Page({
       if (obj.signatureTime){
         if (obj.signatureTime.getMonth()+1 == month){
           // 找到了当月的订单
-          mycount +=  this.calculateCheck(obj.orderType, obj.AD+obj.fee)
+          mycount +=  this.calculateCheck(obj.orderType, obj.AD+obj.fee, obj.discount, obj.repay)
         }
     }
     })
     return mycount
   },
 
-  calculateCheck(e,count){
+  calculateTotalCount(e,month){
+    var mycount = 0
+    e.forEach(obj => {
+      if (obj.signatureTime){
+        if (obj.signatureTime.getMonth()+1 == month){
+          // 找到了当月的订单
+          mycount +=  this.calculateTotalCheck(obj.orderType, obj.AD+obj.fee, obj.discount, obj.repay)
+        }
+    }
+    })
+    return mycount
+  },
+
+  calculateCheck(e,count,discount,repay){
       if (e == "private"){
-        return (count*0.9 - 10000)*0.6
+        return (count*0.9 - 10000)*0.6 - repay
       } 
       if (e == "public"){
-        return (count*0.9 - 10000)*0.3
+        return (count*0.9 - 10000)*0.3 - repay
       }
       if (e == "company"){
-        return (count*0.9 - 10000)*0.5*0.6
+        return (count*0.9 - 10000)*discount*0.6 - repay
       }
+  },
+
+  calculateTotalCheck(e,count,discount,repay){
+    if (e == "company"){
+      return count*discount - repay
+    } else {
+      return count - repay
+    }
+},
+
+  // 获得已签约订单
+  getSignatureSale(e){
+    return e.filter(item => item.signatureTime)
+  },
+
+  sortSale(e){
+    let signatureSale = this.getSignatureSale(e)
+    let extractedData = signatureSale.map(obj => ({count: this.calculateTotalCheck(obj.orderType, obj.AD+obj.fee, obj.discount, obj.repay), userID: obj.userID}))
+    let reducedArr = extractedData.reduce((accumulator, current) => {
+      let found = accumulator.find(item => item.userID === current.userID);
+      if (found) {
+        found.count += current.count;
+      } else {
+        accumulator.push({ ...current });
+      }
+      return accumulator;
+    }, []);
+    reducedArr.sort((a, b) => b.count - a.count);
+    return reducedArr
   },
 
   statusCheck(e){
